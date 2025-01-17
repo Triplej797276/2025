@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* body{
+            height: 100vh;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            /* display: flex; */
+        
+        header{
+            
+            height: 70px;
+            width: 100%;
+            background-color:rgb(203, 193, 193);
+            display: flex;
+          /* justify-content: center; */
+          align-items: center;
+          padding: 10px;
+          /* position:sticky;
+          z-index: 10; */
+          position: sticky;
+          top: 0;
+          z-index: 10;
+        
+        }
+        h1{
+            color: orangered;
+        }
+        nav{
+       
+            justify-content: center;
+                display: flex;
+                margin: auto;
+                gap: 30px;
+        }
+        ul{
+           
+            gap: 20px;
+            list-style: none;
+            display: flex;
+            
+            font-style: oblique;
+            font-size: large;
+            justify-content: center;
+        }
+        a:hover{
+            color: orangered;
+        }
+       a{
+   
+        color: black;
+        text-decoration: none;
+       }
+        button{
+            padding: 5px;
+        }
+        button:hover{
+            background-color: orangered;
+        }
+        .button i{
+            padding: 10PX;
+        }
+        #ourfoods{
+           
+            height: 100vh;
+            width: 100%;
+        }
+       
+        #about{
+            height: 100vh;
+            width: 100%;
+          
+        }
+        .main-container{
+            height: 100vh;
+            width: 100%;
+         
+            justify-content: center;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(224, 206, 212);
+        padding: 20px;
+        gap: 20px;
+           
+        }
+       .container{
+        
+        height: 60vh;
+        width: 400px;
+        /* display: flex; */
+        border: solid black;
+        background-color:rgb(14, 26, 26);
+            justify-content: center;
+            /* align-items: center; */
+       }
+       .container img{
+        padding: 20px;
+        border-radius: 50%;
+       }
+       .container h1{
+        color: aliceblue;
+        padding: 10px;
+       } 
+       p{
+        color: aliceblue;
+        padding: 20px;
+       }
+       .container button{
+        padding: 10px;
+       }
+       .image{
+        height: 200px;
+        width: 300px;
+        font-size: 30px;
+         position: absolute;
+        justify-content: center;
+        align-items: center;
+        top:40%;
+        left: 10%;
+       
+       
+       }
+       .image h1{
+        width: 450px;
+       }
+       .image p{
+     color: black;
+     font-style: italic;
+        width: 500px;
+       }
+      .pic img{
+        height: 100vh;
+        width: 100%;
+        background-color: rgb(0, 0, 0.5);
+        position: absolute;
+        
+        
+       }
+        
+   
+       .sub-container{
+        
+       height: 100vh;
+       width: 100%;
+      
+      
+
+       }
+       .sub-container img{
+        
+        position: absolute;
+       }
+       .sub-container h1{
+        height: 100px;
+        width: 500px;
+        color: black;
+        left: 10%;
+        margin-top: 20%;
+        padding: 10px;
+        /* background-color: aqua; */
+        font-style: oblique;
+        position: absolute;
+       }
+       .max-container{
+        height: 100vh;
+        width: 100%;
+        /* margin-top: 20px; */
+        padding: 20px;
+        display: grid;
+       
+        /* position: absolute; */
+        /* background-color: blue; */
+        grid-template-columns: repeat(3,1fr);
+       
+       }
+       .min-container{
+        /* padding: 50px; */
+      
+        align-items: center ;
+        text-align: center;
+        justify-content: center;
+       }
+       .min-container p{
+        color: black;
+       }
+       #about h1{
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+       }
+       .max-container button{
+        padding: 10px;
+        top: 420%;
+        left: 45%;
+        position: absolute;
+        background-color: orangered;
+        border-radius: 20px;
+        color: black;
+        font-size: 20px;
+      font-style: oblique;
+      
+    
+       }
+       .max-container button:hover{
+        background-color: black;
+        color: aliceblue;
+        position: absolute;
+       }
+       #c-container{
+        height: 100vh;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        top: 450%;
+       }
+       .c-class img{
+        display: flex;
+      
+        position: absolute;
+       }
+       .food-container{
+        padding: 10px;
+        top: 30%;
+        position: absolute;
+       }
+       .food-container p{
+        width: 700px;
+        color: black;
+        color: white;
+        font-size: 20px;
+       }
+       .food-container h1{
+        color: white;
+        font-size: 40px;
+       }
+       .food-container span{
+        color: orangered;
+       }
+       .food-container button{
+        width: 150px;
+        padding: 10px;
+        border-radius: 20px;
+        font-size: 20px;
+        font-family: fantasy;
+       }
+       .upto{
+        height: 100px;
+        width: 120px;
+        border-radius: 50%;
+        position: absolute;
+        top: 15%;
+        right: 18%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: yellow;
+       }
+       .upto h1{
+        width: 100px;
+       }
+       #ourlocation{
+            height: 60vh;
+            width: 100%;
+            /* align-items: center;
+            justify-content: center; */
+            
+            
+        }
+        .main-class{
+            top: 560%;
+            height: 80vh;
+            width: 90%;
+            position: absolute;
+            display: flex;
+            /* justify-
+            content: center; */
+            left: 10px;
+            /* right: 10px; */
+            align-items: center;
+            text-align: center;
+
+            
+        }
+        .head-class{
+            height: 100px;
+            width: 400px;
+            /* background-color: blue; */
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            
+            position: relative;
+        }
+        .second-class {
+            right:30px;
+            /* background-color: black; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            text-align: center;
+            
+        }
+        .first-class{
+            position: absolute;
+            left: 20%;
+        }
+        .second-class h1{
+           font-size: 40px;
+            width: 400px;
+            text-align: justify;
+        }
+        .second-class p{
+            color: black;
+            width: 400px;
+            text-align: justify;
+        }
+        .head-class h2{
+            gap: 20px;
+            color: aliceblue;
+            border-style: solid;
+            padding: 5px;
+            background-color: rgb(0, 0, 0);
+
+            
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <h1>BraVaa</h1>
+    <nav>
+        <ul>
+            <li><a href="#ourfoods"> Our foods</a></li>
+            <li><a href="#ourlocation">Our location</a></li>
+            <li><a href="#about">About us</a></li>
+            
+        </ul>
+ 
+    </nav>
+    <div class="button">
+        <button>Order Now </button>
+        <i class="fa-solid fa-lock"></i>
+    </div>
+   
+   </header>
+   <section id="ourfoods">
+    <div class="pic">
+        <img src="pics/sideimg.jpeg" alt="image" >
+    </div>
+   
+    <div class="image">
+       
+        <h1>Best Thai Food in <i class="fa-regular fa-star"></i> Los Angeles</h1> 
+        <p>Looking for an eco friendly restarant in united states? check out our selection of sustainable restaurants.</p>
+        <button>Order Online </button>
+        <button>Book a table </button>
+       </div>
+   </section>
+ 
+   <div class="main-container">
+    <div class="container">
+        <img src="pic/breakfast.jpg" alt="breakfast" height="200px" width="200px">
+        <h1>Breakfast</h1>
+        <p>Lorem ipsum dolor sit amet Lorem ipsum, dolor sit </p>
+        <button>View more</button>
+    </div>
+    <div class="container">
+        <img src="pic/salmonspread.jpg" alt="breakfast" height="200px" width="200px">
+        <h1>Appetizers</h1>
+        <p>Lorem ipsum dolor sit amet Lorem ipsum, dolor sit </p>
+        <button>View more</button>
+    </div>
+    <div class="container">
+        <img src="pic/dessert-food-photo.jpg" alt="breakfast" height="200px" width="200px">
+        <h1>Breakfast</h1>
+        <p>Lorem ipsum dolor sit amet Lorem ipsum, dolor sit </p>
+        <button>View more</button>
+    </div>
+   </div>
+   <div class="sub-container">
+        <img src="pic/Asiannodels.jpg" height="100%" width="100%" >
+        <h1>Good things come to those who cook for others</h1>
+   
+   </div>
+   <section id="about">
+    <h1>This Week's Top Receips!</h1>
+    <!-- <p>Food grape cafe locally grown heating dish healthy Mustard chopsticks banque drink desert kitchen.</p> -->
+    <div class="max-container">
+        <div class="min-container">
+            <img src="pics/sirloin_steak_salad_2000.jpg" height="200px" width="400px">
+            <h2>Raw scallops from Erquy</h2>
+            <p>Cook: 30min American Healthy salads</p>
+        </div>
+        <div class="min-container">
+            <img src="pics/cauliflowers-sandwiches-.jpg" height="200px" width="400px">
+            <h2>Burnt Aubergine Flatbreads</h2>
+            <p>Cook: 30min Speedy Veggle Dishes</p>
+        </div>
+        <div class="min-container">
+            <img src="pics/codfilet.jpg" height="200px" width="400px">
+            <h2>Cod Filet Cooked on One side</h2>
+            <p>Cook: 30min American Healthy Salads</p>
+        </div>
+        <div class="min-container">
+            <img src="pics/Cobb-Salad-.jpg" height="200px" width="400px">
+            <h2>Steak Salad with Roasted</h2>
+            <p>Cook: 30min sppedy veggie Dishes</p>
+        </div>
+        <div class="min-container">
+            <img src="pics/celeriac&truffle.jpg" height="200px" width="400px">
+            <h2>Celeriac and Truffle Ravioli</h2>
+            <p>Cook: 30min American Healthy salads</p>
+        </div>
+        <div class="min-container">
+            <img src="pics/codfilet6.png" height="200px" width="400px">
+            <h2>Cod Filet Cooked on One Side</h2>
+            <p>Cook: 30min Speedy veggie Dishes</p>
+        </div>
+        <button>Explore Menu</button>
+       </div>
+      
+   </section>
+
+ <section id="c-container">
+    <div class="c-class">
+        <img src="pics/nodels.avif" height="100%" width="100%">
+    </div>
+   <div class="food-container">
+    <h1>Get Upto <span>50%</span> offer on Festival Season!</h1>
+    <p>As export specialists with more than 4 decodes of products for your business through our extensive network of suppliers.</p>
+    <button>Order Now</button>
+
+   </div>
+   <div class="upto">
+    <h1>Upto 50% Off</h1>
+   </div>
+ </section>
+   <section id="ourlocation" >
+    <div class="main-class">
+       
+        <div class="first-class">
+            <img src="pics/Screenshot 2025-01-06 214717.png" alt="ss" height="600px" width="350px">
+        </div>
+        <div class="second-class">
+            <h1>Download Bravaa now available on iPhone & Android!</h1>
+            <p>Industry experence, MT Food Group will work with product for your business through our.</p>
+            <div class="head-class">
+                <h2><i class="fa-brands fa-google-play"></i>GET IN ON GOOGLE PLAY</h2>
+                <h2><i class="fa-brands fa-apple"></i>Download on the App Store</h2>
+            </div>
+       
+        </div>
+    </div>
+   </section>
+   
+  
+   
+</body>
+</html>

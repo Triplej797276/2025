@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            grid-template-areas: 
+            "header header aside"
+            "nav main aside"
+            /* "footer footer footer" */
+            ;
+            grid-template-columns: 1fr 1fr  2fr  ;
+            grid-template-rows: 1fr 1fr  ;
+            height: 100vh;
+            gap: 20px;
+        }
+        header{
+            grid-area: header;
+            background-color: blue;
+            
+        }
+        nav{
+            grid-area: nav;
+            background-color: aqua;
+
+        }
+        aside{
+            grid-area: aside;
+            background-color: yellow;
+
+        }
+        main{
+            grid-area: main;
+            /* display: grid;
+            gap: 10px;
+          padding: 10px;   
+            grid-template-columns:repeat(4,1fr) ; */
+            background-color: black;
+        }
+        /* .g-item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: teal;
+        } */
+        /* footer{
+            grid-area: footer;
+            background-color: brown ;
+        } */
+         .container-1{
+            display: grid;
+            grid-template-areas: 
+            "header header aside aside"
+            "nav main aside"
+            /* "footer footer footer" */
+            ;
+            grid-template-columns: 1fr 1fr  2fr 1fr ;
+            grid-template-rows: 1fr 1fr  ;
+            height: 100vh;
+            gap: 20px;
+
+         }
+         .header{
+            display: flex;
+            background-color: aquamarine;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>header</header>
+        <nav>nav</nav>
+        <main>
+            <!-- <div class="g-item">
+                1
+            </div>
+            <div class="g-item">
+                1
+            </div>
+            <div class="g-item">
+                1
+            </div>
+            <div class="g-item">
+                1
+            </div>
+            <div class="g-item">
+                1
+            </div>
+            <div class="g-item">
+                1
+            </div>
+            <div class="g-item">
+                1
+            </div>
+
+            <div class="g-item">
+                1
+            </div> -->
+        </main>
+        <aside>aside</aside>
+        <!-- <footer>footer</footer> -->
+    </div>
+  
+</body>
+</html>

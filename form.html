@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR and Holograms Webinar</title>
+  <style>
+    /* Global styles */
+    body {
+      font-family: sans-serif;
+      background-color: #181818; /* Dark background */
+      color: #fff; /* White text */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 800px;
+      padding: 30px;
+      border-radius: 5px;
+      background-color: #282828; /* Slightly lighter background */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #555;
+      border-radius: 3px;
+      background-color: #383838;
+      color: #fff;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #555;
+      border-radius: 3px;
+      background-color: #383838;
+      color: #fff;
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    /* Guests and Host */
+    .guests, .host {
+      margin-top: 30px;
+    }
+
+    .guest, .host-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .guest-img, .host-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    /* Responsive adjustments (optional) */
+    @media (max-width: 768px) {
+      .container {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>The help of Augmented Reality and Holograms.</h1>
+    <p>Use Augmented Reality to keep students engaged and provide detailed explanations of models and course material.</p>
+    <p>In a 3D, AR Lab, students can pinch, zoom, and rotate equipment related to the course, for a fully immersive learning experience.</p>
+
+    <div class="form-group">
+      <label for="first-name">First name</label>
+      <input type="text" id="first-name" placeholder="Enter your first name">
+    </div>
+
+    <div class="form-group">
+      <label for="last-name">Last name</label>
+      <input type="text" id="last-name" placeholder="Enter your last name">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Business email</label>
+      <input type="email" id="email" placeholder="Enter your email">
+    </div>
+
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" id="title" placeholder="What is your job title?">
+    </div>
+
+    <div class="form-group">
+      <label for="company">Company name</label>
+      <input type="text" id="company" placeholder="Where do you work?">
+    </div>
+
+    <div class="form-group">
+      <label for="company-size">Company size</label>
+      <select id="company-size">
+        <option value="">Select</option>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="learning-about">What are you hoping to learn about?</label>
+      <textarea id="learning-about" placeholder="Where do you work?"></textarea>
+    </div>
+
+    <div class="form-group">
+      <input type="checkbox" id="email-updates">
+      <label for="email-updates">I would like to receive emails about future webinars</label>
+    </div>
+
+    <button>Register for this event</button>
+
+    <div class="guests">
+      <h2>Guests</h2>
+      <div class="guest">
+        <img src="pics/girl.webp" alt="Guest 1" class="guest-img">
+        <div>
+          <p>Lisa Alvin</p>
+          <p>Cofounder, Jea</p>
+        </div>
+      </div>
+      <div class="guest">
+        <img src="pics/pexels-arina-krasnikova-6016344.jpg" alt="Guest 2" class="guest-img">
+        <div>
+          <p>Jenny Pick</p>
+          <p>Head of Education, Jea</p>
+        </div>
+      </div>
+      <div class="guest">
+        <img src="pics/pexels-lum3n-44775-568370.jpg" alt="Guest 3" class="guest-img">
+        <div>
+          <p>Peter Scott</p>
+          <p>Founder, Jea</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="host">
+      <h2>Hosted by</h2>
+      <div class="host-item">
+        <img src="host.jpg" alt="Host" class="host-img">
+        <div>
+          <p>Josh Jacob</p>
+          <p>Educator, Web</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

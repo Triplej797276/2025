@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        header{
+            /* background-image: url("/image/bubbleheader.jpg"); */
+            background-size: 1700px;
+            background-position: top;
+            background-repeat: no-repeat;
+             background-color: brown; 
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }       
+       
+        ul{
+            display: flex;
+            gap: 10px;
+            list-style: none;
+            text-decoration: none;
+            justify-content: center;
+            
+            
+        }
+        li{
+            justify-content: center;
+            gap: 10px;
+        }
+        li a{
+            text-decoration: none;
+            color: beige;
+
+        }
+        li:hover{
+            color: chartreuse;
+            background: red;
+            padding: 3px;
+        }
+        section{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       nav{
+        justify-content: center;
+        margin: auto;
+
+    }
+    #home{
+        background-image: url("/image/flower.jpg");
+        background-repeat: no-repeat;
+        /* background-size: auto; */
+        background-size: cover;
+    } 
+      /* #about{ 
+        background-image: url("/image/butterfly.webp");
+         background-repeat: no-repeat; 
+         background-size: auto; 
+        background-size: cover; 
+     }  */
+    #contact{
+        background-image: url("/image/light.jpg");
+        background-repeat: no-repeat;
+        /* background-size: auto; */
+        background-size: cover;
+    }
+    .about_sev{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+         justify-content: center; 
+        text-align: center;
+        padding: 10px;
+         flex-direction: row; 
+        align-items: center;
+        gap: 30px;
+      
+
+
+    }
+    .about_sev p{
+        
+        display: flex;
+        text-align: justify;
+        gap: 10px;
+        justify-items: center;
+        margin-top: 20px;
+        margin-right: 0px;
+     
+    
+    }
+    
+    .about_sev  h1{
+        
+        align-items: center;
+    }
+    .feature{
+        
+        /* background-image: url("image/bubbleheader.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; */
+        display: flex;
+        height: 50vh;    
+        width: 100%;    
+        gap: 50px;
+        padding: 10px;
+        justify-content: space-evenly;
+        
+
+    }
+    .feature div{
+        width: 33.33%;
+        background-color: antiquewhite;
+    }
+    .feature span{
+        border-radius: 50%;
+        background-color: aqua;
+        font-size: 50px;
+        padding: 20px;
+    }
+    .feature p{
+        font-size: 20px;
+        padding: 20px;
+        
+    }
+   .feature h3{
+    font-size: xx-large;
+    justify-items: center;
+    padding: 20px;
+
+   }
+    .footer{
+        background-image: url("image/bubbleheader.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        height: 50vh;    
+        width: 100%;    
+        gap: 50px;
+        padding: 10px;
+        justify-content: space-evenly;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: justify;
+        /* justify-items: center; */
+    }
+    .footer h1{
+        color: antiquewhite;
+        gap: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer address{
+        padding: 20px;
+    } 
+    .footer div{
+        /* background-color: aqua; */
+        width: 33.33%;
+        text-align: center;
+    }
+    #about{
+        margin: 20px ;
+        
+    }
+    .footer h4{
+        margin-top: 10px;
+    }
+    footer a{
+        margin-top: 10px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="/image/mylogo.jpg" width="100px" height="100px" alt="image"/>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About us</a> </li>
+                <li><a href="#feature">Feature</a> </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h1><b>Home</b></h1>
+    </section>
+    <section id="feature" class="feature">
+        
+        <div>
+                <span>01</span>
+                <h3>job placement</h3>
+                <p>we provide full placement</p>
+        </div>
+        <div>
+            <span>02</span>
+            <h3>certified experiment</h3>
+            <p>we provide full placement</p>
+    </div>
+    <div>
+        <span>03</span>
+        <h3>trending course</h3>
+        <p>we provide full placement</p>
+</div>
+    </section>
+    <section id="about" class="about_sev">
+        
+        <div id="about">
+            <h1><b>About us</b></h1>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Illo facilis in aliquam natus praesentium sed consectetur 
+               aperiam totam eligendi debitis repellat 
+               odit aspernatur ipsum fugiat,
+                ratione iste et! Explicabo, accusantium.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Illo facilis in aliquam natus praesentium sed consectetur 
+               aperiam totam eligendi debitis repellat odit aspernatur ipsum 
+               fugiat, ratione iste et! Explicabo, accusantium.
+            </p>
+        </div>
+        
+        <div>
+            <h1>mission</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Illo facilis in aliquam natus praesentium sed consectetur 
+               aperiam totam eligendi debitis repellat 
+               odit aspernatur ipsum fugiat,
+                ratione iste et! Explicabo, accusantium.
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+               Illo facilis in aliquam natus praesentium sed consectetur 
+               aperiam totam eligendi debitis repellat odit aspernatur ipsum 
+               fugiat, ratione iste et! Explicabo, accusantium.
+            </p>
+        </div>
+      
+  
+    </section>
+    <section id="contact">
+        <h1><b>Contact us</b></h1>
+    </section>
+    <footer class="footer" >
+        <div>
+        <h1>Head office</h1>
+        <address>
+            <p>
+                24/4,Prabhat Colony, 
+                Near Prabhat Chauk, 
+                Jalgaon (MH),
+                 Pin Code 425001.
+
+                <h5>Design By: jay jadhav</h5>
+            </p>
+        </address>
+        </div>
+        
+        <div>
+          <h1>Contact info</h1>
+          <p>
+            <h4>+917972760333</h4>
+           <h4>jayjadhav2507@gmail.com</h4> 
+          </p>
+        </div>
+        <div>
+        <h1>follow us</h1>
+            <a href="image/wp.webp" ><img src="image/wp.webp" weight="30" height="30"></a>
+            <a href="image/fc.png" ><img src="image/fc.png" weight="30" height="30"></a>
+            <a href="image/insta.jpg" ><img src="image/insta.jpg" weight="30" height="30"></a>
+            <a href="image/tw.png" ><img src="image/tw.png" weight="30" height="30"></a>
+        </div>
+
+
+    </footer>
+</body>
+</html>

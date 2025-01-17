@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container-1{
+            display: grid;
+            grid-template-areas: 
+            "header header aside right"
+            "nav main aside right"
+            /* "footer footer footer right" */
+
+            ;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            /* grid-template-rows: 1fr 2fr 2fr 2fr; */
+            height: 100vh;
+            gap: 10px;
+            background-color: black;
+        }
+        header{
+            grid-area: header;
+            background-color: grey;
+            border-radius: 20px;
+        }
+        nav{
+            border-radius: 20px;
+            grid-area: nav;
+            background-color: grey;
+        }
+        main{
+            border-radius: 20px;
+            grid-area: main;
+            background-color: grey;
+        }
+        aside{
+            border-radius: 20px;
+            grid-area: aside;
+            background-color: grey;
+        }
+        right{
+            border-radius: 20px;
+            grid-area: right;
+            background-color: grey;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <header>header</header>
+        <nav>nav</nav>
+        <main>main</main>
+        <aside>aside</aside>
+        <right>right</right>
+    </div>
+</body>
+</html>

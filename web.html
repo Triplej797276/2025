@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>first web page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: brown;
+        }
+      header{
+        padding: 30px;
+        color: rgb(0, 0, 0);
+    
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 90px;
+      }
+      ul{
+            gap: 20px;
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+      }
+      li a{
+        text-decoration: none;
+        color: aliceblue;
+      }
+      section{
+        height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      }
+      
+      nav{
+        justify-content: center;
+        margin: auto;
+      
+
+    }
+   
+    #home{
+        background-image: url("/image/homepage.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    #about{
+        background-image: url("/image/about.avif");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #contact{
+        background-image: url("/pic/us.avif");
+       background-position: top;
+        color: rgb(0, 0, 0);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  
+    .cards{
+        display: flex;
+        padding: 30px;
+        background-color: grey;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+       border: saddlebrown;
+       border-style: solid;
+        gap: 30px;
+        height: 50vh;
+        width: 100%;
+        /* flex-direction: column; */
+    }
+    .item{
+        border-style: solid;
+       
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    span{
+        border-radius: 50%;
+        background-color: rgb(14, 32, 198);
+        padding: 20px;
+        text-align: start;
+        margin-bottom: 10px;
+    }
+    h1{
+        padding: 20px;
+        margin-top: 10px;
+    }
+    p{
+        font-size: 20px;
+        padding: 20px;
+        
+    }
+    h1{
+        margin-bottom: 70px;
+    }
+    .jj{
+        padding: 20px;
+        background-color: rgb(245, 240, 240);
+       
+    }
+    footer{
+        height: 30vh;
+        width: 100%;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .icons{
+       padding: 50px;
+     display: flex;
+        gap: 20px;
+        
+    }
+    .icons a{
+        font-size: 34px;
+            text-decoration: none;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="/image/mylogo-removebg-preview.png" width="100px" height="100px" alt="image"/>
+        </div>
+      
+        <nav>
+           
+            <ul>
+                    <li><a href="#home" >Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Home</h1>
+
+    </section>
+    <div class="cards">
+        <div class="item">
+            <span>01</span>
+            <h1>Job placement</h1>
+            <p>We provide full Placement assistance to choose your dream career.</p>
+
+        </div>
+        <div class="item">
+            <span>02</span>
+            <h1>Certified Experience</h1>
+            <p>We provide full Placement assistance to choose your dream career.</p>
+
+        </div>
+        <div class="item">
+            <span>03</span>
+            <h1>Job placement</h1>
+            <p>We provide full Placement assistance to choose your dream career.</p>
+
+        </div>
+
+    </div>
+    
+    <section id="about">
+        <h1>About us</h1>
+    </section>
+    <section id="contact">
+        <h1>Contact us</h1>
+       
+       
+    </section>
+    <footer>
+        
+        <div class="icons">
+            <a href="#" title="twitter">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" title="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" title="youtube">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#" title="linked">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            
+        </div>
+    </footer>
+    
+</body>
+</html>

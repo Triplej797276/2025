@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+          
+        }
+        header{
+            height: 70px;
+            width: 100%;
+            background-color: burlywood;
+            display: flex;
+          /* justify-content: center; */
+          align-items: center;
+          padding: 10px;
+          position: sticky;
+          top: 0;
+          z-index: 10;
+       
+
+        }
+      
+        nav{
+            padding: 20px;
+            justify-content: center;
+                display: flex;
+                margin: auto;
+                gap: 30px;
+                
+            
+        }
+        ul{
+            gap: 20px;
+            list-style: none;
+            display: flex;
+             
+            font-style: oblique;
+            font-size: large;
+            justify-content: center;
+        }
+     button {
+        padding-left: 20px;
+        padding: 10px ;
+         
+       }
+       .image{
+        height: 100vh;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        text-align: center; 
+       
+     
+        
+        /* flex-direction: column; */
+        /* position: absolute; */
+       }
+       img{
+        font-size: 50px;
+       }
+       h2{
+        position: absolute;
+      
+        
+        /* z-index:-1; */
+       }
+       #menu{
+        background-color: rgb(255, 255, 255);
+        height: 100vh;
+        width: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       footer{
+        height: 50vh;
+        width: 100%;
+        display: flex ;
+
+       }
+        .about{
+        /* height: 50vh;
+        width: 100%; */
+         /* background-color: rgb(238, 238, 238); */
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        gap: 20px;
+       justify-content: center;
+       } 
+      
+       h4{
+        padding: 30px;
+        
+       }
+       #location{
+        height: 50vh;
+        width: 100%;
+        
+        align-items: center;
+        /* position: absolute; */
+     
+       }
+       .content{
+      height: 50vh;
+      width: 100%;
+        padding: 20px;
+        text-align: center;
+        bottom: 50%;
+        color: red;
+       
+       
+       }
+       #location img{
+        height: 50vh;
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+     
+    
+       
+       }
+       span{
+        color: black;
+       }
+       i{
+        font-size: 20px;
+        padding: 10px;
+       
+       }
+       footer{
+        height: 50vh;
+        width: 100%;
+        background-color: burlywood;
+       
+        align-items: center;
+        padding: 10px;
+        gap: 30%;
+        position: absolute;
+       }
+       footer .first{
+        text-align: center;
+       /* align-items: center; */
+       /* padding: 10px; */
+        justify-content: center;
+       }
+       footer .second{
+      
+        /* justify-content: center; */
+        align-items: center;
+        text-align: center;
+       }
+       footer.third{
+        text-align: center;
+    
+        gap: 10px;
+       }
+       footer .color{
+        height: 50px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-color:crimson;
+        position: absolute;
+        display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+       }
+       </style>
+</head>
+<body>
+    <header>
+        <h1>BURGER HUB</h1>
+        <nav>
+            <ul>
+               <li><a href="#menu">Menu</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </nav>
+   
+        <div class="bt">
+            <button>Gift cards</button> 
+            <button>order now</button>
+        </div>
+       
+    </header>
+ 
+    <div class="image">
+        <img src="pic/homeburger.jpg" alt="coca" width="100%" height="100%">
+        <h2>Home</h2>
+    </div>
+
+    <section id="menu">
+      <div class="about">
+        <div>
+          <img src="pic/DrinksCircle2x.png" alt="drink" height="100px" width="100px">
+          <h4><a href="Drinks"> Drinks</a></h4>
+        </div>
+        <div>
+          <img src="pic/FG-Fries-Icon-01-removebg-preview.png" alt="drink" height="86px" width="100px">
+          <h4><a href="fries">Fries</a></h4>
+        </div>
+          <div>
+              <img src="pic/BurgerCircle2xa.png" alt="drink" height="100px" width="100px">
+              <h4><a href="burger">burger</a></h4>
+            </div>
+            <div>
+              <img src="pic/ToppingsCircle2x.png" alt="drink" height="100px" width="100px">
+              <h4><a href="topping">Topping</a></h4>
+            </div>
+            <div>
+              <img src="pic/ShakesCircle2x.png" alt="drink" height="100px" width="100px">
+              <h4><a href="shakes">Shakes</a> </h4>
+            </div>
+          </div>
+    </section>
+    <section id="location">
+      <img src="pic/heroImageDirectory.6b7aa305.png" alt="hero" height="50%" width="100%">
+      <h2>ALL Burger Hub® RESTAURANTS
+        IN THE UNITED STATES</h2>
+     
+    
+    </section>
+    <div class="content">
+      <h1>BURGER HUB LOCATION</h1>
+      <i class="fa-solid fa-location-dot"></i>
+      <span>3315 Northgate Blvd suite 8, Sacramento, CA 95834, United States</span>
+    </div> 
+  <section id="contact">
+  <footer>
+    <div class="first"> 
+      <h1>BURGER HUB</h1>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-facebook"></i>
+    </div>
+    <div class="second">
+      <h1>Location</h1>
+      <h2>The Burger hub story</h2>
+    </div>
+    <div class="third">
+      <h1>Contact us</h1>
+      <h3>BURGER HUB GEAR</h3>
+      <h3>Gift Card</h3>
+    </div>
+    <div class="color">
+      <h2>ALL Burger Hub® RESTAURANTS
+        IN THE UNITED STATES</h2>
+    </div>
+  </footer>
+</section>
+      
+    
+    
+</body>
+</html>

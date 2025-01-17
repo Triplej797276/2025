@@ -1,0 +1,35 @@
+header{
+    height: 100px;
+    width: 100%;
+    background-color: burlywood;
+    display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 10px;
+  
+
+
+}
+
+nav{
+    padding: 20px;
+    justify-content: center;
+        display: flex;
+        margin: auto;
+        gap: 30px;
+    
+}
+ul{
+    gap: 20px;
+    list-style: none;
+    display: flex;
+    
+    font-style: oblique;
+    font-size: large;
+    justify-content: center;
+}   
+button {
+
+padding: 10px ;
+    size: 40px;
+}

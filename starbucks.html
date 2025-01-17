@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: brown;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }       
+        ul{
+            display: flex;
+            gap: 10px;
+            list-style: none;
+            text-decoration: none;
+            justify-content: center;
+            
+            
+        }
+        li{
+            justify-content: center;
+            gap: 10px;
+        }
+        li a{
+            text-decoration: none;
+            color: beige;
+
+        }
+        li:hover{
+            color: chartreuse;
+            background: red;
+            padding: 3px;
+        }
+        section{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       nav{
+        justify-content: center;
+        margin: auto;
+       }
+       #home{
+        background-image: url("/image/flower.jpg");
+        background-repeat: no-repeat;
+        /* background-size: auto; */
+        background-size: cover;
+    } 
+    #about{
+        background-image: url("/image/butterfly.webp");
+        background-repeat: no-repeat;
+        /* background-size: auto; */
+        background-size: cover;
+    }
+    #contact{
+        background-image: url("/image/light.jpg");
+        background-repeat: no-repeat;
+        /* background-size: auto; */
+        background-size: cover;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image/starbuck.avif" width="100px" height="100px" alt="image"/>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About us</a> </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <h1>Home</h1>
+    </section>
+    <section id="about">
+        <h1>about us</h1>
+    </section>
+    <section id="contact">
+        <h1>contact</h1>
+    </section>
+</body>
+</html>

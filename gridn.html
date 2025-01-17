@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Layout Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            gap: 10px;
+            grid-template-areas:
+                "header header header ads"
+                "nav main aside ads"
+                "nav footer footer ads";
+            grid-template-rows: auto 1fr 100px;
+            grid-template-columns: auto 3fr 1fr 100px;
+            height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #f8b400;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav {
+            grid-area: nav;
+            background-color: #4caf50;
+            padding: 12px;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: #2196f3;
+            padding: 12px;
+        }
+
+        main {
+            grid-area: main;
+            display: grid;
+            gap: 10px;
+            /* grid-template-columns: 2fr 1fr 1fr 1fr; */
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 2fr;
+            background-color: #ffffff;
+            padding: 12px;
+        }
+
+        .g-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #f44336;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .ads {
+            grid-area: ads;
+            background-color: red;
+            text-align: center;
+        }
+
+        @media screen and (orientation: portrait) {
+            .container {
+                grid-template-areas:
+                    "header"
+                    "nav"
+                    "main"
+                    "aside"
+                    "footer";
+                grid-template-columns: 1fr;
+                grid-template-rows: 100px auto 1fr auto auto;
+            }
+
+            .ads {
+                display: none;
+            }
+
+            main {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(8, 300px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>Sidebar</nav>
+        <aside>Aside</aside>
+        <footer>Footer</footer>
+        <main>
+            <div class="g-item">
+                1
+            </div>
+            <div class="g-item">
+                1
+            </div>
+            <div class="g-item">
+                1
+            </div>
+            <div class="g-item">
+                1
+            </div>
+            <div class="g-item">
+                1
+            </div>
+            <div class="g-item">
+                1
+            </div>
+            <div class="g-item">
+                1
+            </div>
+            <div class="g-item">
+                1
+            </div>
+        </main>
+        <header>Header</header>
+        <div class="ads">
+            Ads
+        </div>
+
+    </div>
+</body>
+
+</html>

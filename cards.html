@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            background-color: aqua;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            padding: 30px;
+        }
+        .cards{
+            height: 80%;
+            width: 60%;
+            gap: 10px;
+            background-color: black;
+            
+            display: flex;
+            align-items: center;
+            
+        }
+        .item{
+            height: 80%;
+            flex-grow: 1;
+            border: 8px solid rgb(13, 255, 0);
+            border-style: dotted;
+            gap: 10PX;
+            padding: 40px;
+        
+            display: flex;
+        }
+        .cards .item img{
+            width: 100%;
+            height: 50%;
+        }
+        h1{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            margin-bottom: 40%;
+        }
+    </style>
+</head>
+    <body>
+            
+        <h1>responsive cards</h1>
+        <div class="cards">
+        
+            <div class="item">
+                <img src="image/twitterre.png" alt="twitter"/>
+
+
+            </div>
+            <div class="item">
+                <img src="image/instare.jpg" alt="whatsapp"/>
+
+
+            </div>
+            <div class="item">
+                <img src="image/fcremove.png" alt="facebook"/>
+
+
+            </div>
+        </div>
+    </body>
+</html>

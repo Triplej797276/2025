@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <style>
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        
+    }
+  
+    header{
+        height: 70px;
+        display: flex;
+        background-color: dimgray;
+        position: sticky;
+          top: 0;
+          z-index: 10;
+    }
+    h1{
+        padding: 10px;
+    }
+    nav{
+        margin: auto;
+    }
+   
+    ul{
+        display: flex;
+        gap: 20px;
+        font-size: 20px;
+        list-style: none;
+
+    } 
+    button{
+       width: 200px;
+       background-color: #041b0f ;
+       color: white;
+       border-radius: 10px;
+    }  
+    .container{
+        top: 30%;
+        left: 20%;
+       position: absolute;
+        justify-content: center;
+        gap: 20%;
+        /* background-color: blue; */
+        align-items: center;
+        text-align: left;
+        display: flex; 
+    }
+    .main-container
+    {
+        
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(155, 182, 182);
+        
+    }
+   
+        .container h1{
+            width: 500px;
+            font-size: 50px;
+            text-align: justify;
+            justify-content: center;
+            align-items: center;
+            /* background-color: aqua; */
+           
+        }
+        .container p{
+            width: 500px;
+            padding: 10px;
+            font-size: 25px;
+            text-align: left;
+        }
+        .container button{
+            width: 120px;
+            margin-top: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 15px;
+            /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+        }
+      
+       
+        #button2{
+            margin-left: 20px;
+            background-color: aliceblue;
+            color: black;
+            text-align: center;
+           
+        }
+        .image-container{
+            position: absolute;
+            top: 70%;
+            left: 15%;
+            gap: 20px   ;
+            display: flex;
+            justify-content: center;
+           
+         
+            border-color: aqua;
+          
+        }
+        .image-container img {
+            border-radius: 20px;
+            padding: 10px;
+            
+         
+        }
+        .star{
+            left: 30%;
+            position: absolute;
+        
+        }
+        .star img{
+            position: absolute;
+        }
+        .star2{
+            left: 10px;
+            top: 80%;
+            position: absolute;
+        }
+        .star3{
+            position: absolute;
+            left: 67%;
+            top: 92%;
+        }
+        .star2 img{
+            
+            position: absolute;
+        }
+        #work{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        #work h1{
+            font-size: 40px;
+            padding: 20px;
+            color: #041b0f;
+        }
+        #work p{
+            width: 600px;
+            font-size: 20px;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        #customer{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            /* margin-top: 10%; */
+            gap: 70px;
+            background-color: lightblue;
+             justify-content: center;
+             /* align-items: center; */
+             /* align-items: center;  */ 
+           }
+        .c-customer{
+            padding: 30px;
+            width: 400px;
+            justify-content: center;
+            align-items: center;
+          
+          
+            
+        }
+        .c-customer h2{
+            width: 600px;
+            font-size: 50px;
+            position: absolute;
+        
+            color: #041b0f;
+            padding: 20px;
+            left: 10%;
+            top: 230%;
+        }
+        .c-customer p{
+            width: 500px;
+            font-size: 20px;
+            position: absolute;
+            left: 9%;
+            top: 250%;
+            padding: 40px;
+        }
+         #customer img{
+            position: absolute; 
+            left: 60%;
+            top: 230%;
+         }
+        .star4{
+            position: absolute;
+            left: 56%;
+            top: 220%;
+        }
+        .star5{
+            position: relative;
+            right: 40%;
+        }
+        .boys{
+            display: grid;
+            grid-template-columns: repeat(2,300px);
+
+        }
+        #employee{
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            /* margin-top: 10%; */
+            align-items: center;
+            justify-content: center;
+            background-color: darkslategrey;
+        }
+        .about{
+           position: absolute;
+           left: 10%;
+         
+        }
+        .about h1{
+            width: 350px;
+            font-size: 45px;
+            padding: 10px;
+            color: white;
+            /* color: #041b0f; */
+        }
+        .about p{
+            width: 400px;
+            font-size: 20px;
+            padding: 10px;
+        }
+        .boys{
+            position: absolute;
+            right: 10%;
+        }
+        .boys img{
+            position: relative;
+            border-radius: 10px;
+        }
+        #image03{
+            position: relative;
+            /* left: 10px; */
+        }
+      #image04{
+        position: relative;
+        top: 35%;
+        left: 20%;
+      }
+      #image05{
+        position: absolute;
+        left: 40%;
+        top: 30%;
+      }
+      #cost{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+      }
+      #cost h1{
+        width: 450px;
+        font-size: 50px;
+        color: #041b0f;
+      }
+      #cost p{
+        font-size: 25px;
+        width: 500px;
+        padding: 10px;
+      }
+      .cost-c{
+        position: absolute;
+        height: 70px;
+        width: 250px;
+        left: 50%;
+        top: 435%;
+        gap: 10px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+      }
+      .cost-c h1{
+        font-size: 10px;
+      }
+      #last-container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        background-color: lightsteelblue;
+        gap: 10%;
+      }
+      #last-container h1{
+        width: 450px;
+        font-size: 40px;
+        padding: 10px;
+      }
+      #last-container p{
+        width: 500px;
+        padding: 20px;
+        font-size: 20px;
+      }
+      #last-container button{
+        margin-left: 20px;
+        margin-top: 10px;
+        padding: 20px;
+      }
+      #last-container img{
+        border-radius: 10px;
+      }
+      footer{
+        height: 30vh;
+        width: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        gap: 13%;
+        justify-content: center;
+        align-items: center;
+    }
+      li{
+       
+        list-style: none;
+        line-height: 30px;
+
+      }
+      i{
+        padding: 10px;
+        font-size: 20px;
+      }
+      h3{
+        font-size: 20px;
+       color: #041b0f;
+      }
+      .lastone{
+        
+        display: flex;
+        
+      }
+      .lastone p{
+        padding: 10px;
+      }
+      .lastone h5{
+        padding: 10px;
+      margin-left: 30%;
+        
+      }
+      
+    </style>
+ 
+</head>
+<body>
+    <header>
+        <h1>Formonix</h1>
+        <nav>
+            <ul>
+                <li>Why stant?</li>
+                <li>Customers</li>
+                <li>Pricing</li>
+                <li>Learn</li>
+                <li>Company</li>
+            </ul>
+        </nav>
+        <button>Sign up</button>
+    </header>
+    <div class="main-container">
+        <div class="container">
+            <div class="first">
+                <h1>A student workforce that's transforming hospitality</h1>
+            </div>
+            <div class="second">
+                <p>Stande connects students to hospitality businesses for short shifts of work, talking pressure off core.</p>
+             <div class="bt">
+                <button id="button1">students</button>
+                <button id="button2">Businesses</button>
+             </div>
+             <div class="star">
+                <img src="pics/Screenshot_2025-01-07_212848-removebg-preview.png" alt="star" height="70" width="100px">
+            </div>  
+             
+            </div>
+        </div>
+        <div class="image-container">
+           
+            <img id="image1" src="pics/firstimage.jpg"   alt="image" height="200px" width="200px">
+            <img id="image2"  src="pics/Screenshot 2025-01-07 185636.png"  alt="image" height="250px" width="200px">
+            <img id="image3"  src="pics/girl.webp"  alt="image" height="250px" width="300px">
+            <img id="image4"  src="pics/computerboy.webp"  alt="image" height="150px" width="150px">
+            <img id="image5"  src="pics/standboy.webp" alt="image" height="200px" width="200px">
+            <div class="star2">
+                <img src="pics/Screenshot_2025-01-11_235840-removebg-preview.png" alt="star" height="70" width="100px">
+            </div> 
+         
+        </div>
+        <div class="star3">
+            <img src="pics/Screenshot_2025-01-11_235840-removebg-preview.png" alt="star" height="70" width="100px">
+        </div> 
+
+    </div>
+    <section id="work">
+        <div>
+            <div class="content">
+                <h1> See how Stande work</h1>
+                <p>We conect you with students who work during your 2-3 hour peaks periods each day, allowing you to improve the and team experience.</p>
+        
+            </div>
+           <div>
+            <Video controls height="500px" width="700px">
+                <source src="video/9034538-uhd_3840_2160_24fps (1).mp4" type="video/mp4" >
+            </Video>
+           </div>
+            
+        </div>
+    </section>
+    <section id="customer">
+       <div class="c-customer">
+        <h2>Give your customers the experience they deserve</h2>
+        <p>Enhance the customer experience by having enough hands to deliver on your promise, no matter the time of day</p>
+        
+       
+       </div>
+       <div>
+        <img src="pic/pexels-mike-jones-9461226.jpg" alt="img" height="500px" width="400px">
+        <div class="star4">
+            <img src="pic/Screenshot_2025-01-12_010131-removebg-preview.png" alt="image" height="200px" width="120px">
+        </div>
+        <div class="star5">
+            <img src="new/Screenshot_2025-01-12_014221-removebg-preview.png" alt="img" height="100px" width="100px">
+        </div>
+       </div>
+        </section>
+        <section id="employee">
+            <div class="about">
+                <h1>Do more to help your team thrive</h1>
+                <p>Provide support for your team at those daily peaks when they need it most, and breed a happier work place with stable and committed employees.</p>
+                <div class="star6">
+                    <img src="new/Screenshot_2025-01-12_014221-removebg-preview.png" alt="img" height="100px" width="100px">
+                </div>
+            </div>
+            <div class="boys">
+                <img id="image01" src="new/pexels-prolificpeople-30004315.jpg" alt="image" height="150px" width="200px">
+                <img id="image02" src="new/pexels-silverkblack-23496638.jpg" alt="image" height="200px" width="300px">
+              
+                <img id="image03"  src="new/pexels-olly-3799223.jpg" alt="image" height="200px" width="300px">
+                <img id="image04" src="new/pexels-olly-3785110.jpg" alt="image" height="150px" width="200px">
+                <img id="image05" src="new/Screenshot_2025-01-12_014325-removebg-preview.png" alt="cup" height="120px" width="120px">
+              
+            </div>
+        </section>
+        <section id="cost">
+            
+            <div>
+                <h1>Keep overvall costs under control</h1>
+                <p>Deploy your team with more precision so you can drive revenue during your busy periods, and stay affordable during quiet periods</p>
+                <div class="star6">
+                    <img src="new/Screenshot_2025-01-12_014221-removebg-preview.png" alt="img" height="120px" width="120px">
+                </div>
+            </div>
+            <div >
+                <img src="new/pexels-olly-927022 copy.jpg" alt="image" height="350px" width="450px">
+                <div class="cost-c">
+                    <img src="new/Screenshot 2025-01-12 185533.png" alt="ss" height="70px" width="70px">
+                    <span><h3>$340 </h3>weekly weak reduction</span>
+                </div>
+              
+            </div>
+          
+        </section>
+        <section id="last-container">
+            <div>
+                <img src="new/lastimg copy.webp" alt="last" height="400px" width="400px">
+            </div>
+            <div>
+                <h1>Grays Court Hotel York maximises their customer and team experience  </h1>
+                <p>Using Formonix students has meanst key staff are able to dedicate themselves to customer relations and guest interations leading to a much improved customer experience, Find out more.</p>
+                <button>Read All Story</button>
+            </div>
+       
+        </section>
+        <footer>
+            <div>
+                <h1>Formonix.</h1>
+            
+                    <i class="fa-brands fa-twitter"></i>
+                
+                
+                    <i class="fa-brands fa-instagram"></i>
+                
+             
+                    <i class="fa-brands fa-youtube"></i>
+              
+                
+                    <i class="fa-brands fa-linkedin"></i>
+            </div>
+
+            <div>
+                <h3>Platform</h3>
+                <li>Shop All</li>
+                <li>Bags</li>
+                <li>Interior Organizers</li>
+            </div>
+            <div>
+                <h3>For Students</h3>
+                <li>Overview</li>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+            </div>
+            <div>
+                <h3>Learn</h3>
+                <li>Resources</li>
+                <li>From the Blog</li>
+                <li>Latest News</li>
+            </div>
+            <div>
+                <h3>Support</h3>
+                <li>FAQ & Returns</li>
+                <li>Corporate Gifting</li>
+                <li>Bravaa@gmail.com</li>
+            </div>
+        </footer>
+        <div class="lastone">
+            <p>2022 formix limited all rights Reserved.</p>
+            <h5>Teams & conditions</h5>
+            <h5>Privacy policy</h5>
+        </div>
+</body>
+</html>
